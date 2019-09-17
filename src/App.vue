@@ -2,7 +2,7 @@
 <v-app id="inspire">
    <!-- Side Navigation Bar -->
     <v-navigation-drawer v-model="drawer" temporary app>
-      <v-list dense>
+      <v-list>
         <v-list-item @click="$router.push('/')">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
@@ -26,17 +26,17 @@
     <!-- Top Navigation bar -->
     <v-app-bar app color="cyan" dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>I Am The Change Scholarship</v-toolbar-title>
     </v-app-bar>
       <v-content>
-        <v-container fluid class="overflow-y-auto">
+         <v-container fluid>
           <router-view></router-view>
-        </v-container>
+        </v-container> 
       </v-content>
-    
+ 
     <v-footer color="cyan" app>
       <span class="white--text">TeamEverest&copy; 2019</span>
-    </v-footer>
+    </v-footer> 
   </v-app>
 </template>
 <script>

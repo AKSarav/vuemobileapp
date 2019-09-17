@@ -1,14 +1,24 @@
 <template>
+<v-card class="scroll pa-5 ma-0 scroll-y mx-auto">
+<v-card-title>Fees Request Form</v-card-title>
+          <v-divider></v-divider>
+
 <v-form
     ref="form"
     v-model="valid"
     lazy-validation
+    class="pa-2"
   >
+  <v-container>
     <v-text-field
       v-model="name"
       :counter="10"
       :rules="nameRules"
       label="Name"
+      auto-grow
+      outlined
+      rows="1"
+      row-height="15"
       required
     ></v-text-field>
 
@@ -19,6 +29,62 @@
       required
     ></v-text-field>
 
+    <v-text-field
+      v-model="email"
+      :rules="emailRules"
+      label="E-mail"
+      required
+    ></v-text-field>
+
+    <v-text-field
+      v-model="email"
+      :rules="emailRules"
+      label="E-mail"
+      required
+    ></v-text-field>
+
+
+    <v-text-field
+      v-model="email"
+      :rules="emailRules"
+      label="E-mail"
+      required
+    ></v-text-field>
+
+    <v-text-field
+      v-model="email"
+      :rules="emailRules"
+      label="E-mail"
+      required
+    ></v-text-field>
+
+    <v-text-field
+      v-model="email"
+      :rules="emailRules"
+      label="E-mail"
+      required
+    ></v-text-field>
+
+    <v-text-field
+      v-model="email"
+      :rules="emailRules"
+      label="E-mail"
+      required
+    ></v-text-field>
+
+    <v-text-field
+      v-model="email"
+      :rules="emailRules"
+      label="E-mail"
+      required
+    ></v-text-field>
+
+    <v-text-field
+      v-model="email"
+      :rules="emailRules"
+      label="E-mail"
+      required
+    ></v-text-field>
     <v-text-field
       v-model="email"
       :rules="emailRules"
@@ -90,7 +156,7 @@
       label="Do you agree?"
       required
     ></v-checkbox>
-
+ <v-divider></v-divider>
 <div class="text-center">
     
     <v-btn
@@ -110,7 +176,9 @@
       RESET
     </v-btn>
 </div>    
-  </v-form>
+</v-container>
+   </v-form>
+</v-card> 
 </template>
 <script>
   export default {
@@ -151,4 +219,12 @@
     },
   }
 </script>
+<style scoped>
+.scroll {
+      overflow-y: auto;
+      max-height: 90vh;
+      
+    }
+
+</style>
 
